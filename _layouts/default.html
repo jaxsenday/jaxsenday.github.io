@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+    <meta name="description" content="{{ site.description }}">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="wrap">
+        <a class="site-title" href="{{ '/' | relative_url }}">{{ site.data.site.profile.name }}</a>
+        <nav class="site-nav" aria-label="Primary">
+          <a href="{{ '/' | relative_url }}">Home</a>
+          <a href="{{ '/papers/' | relative_url }}">Papers</a>
+          <a href="{{ '/activities/' | relative_url }}">Activities</a>
+          <a href="{{ '/cv/' | relative_url }}">CV</a>
+          <a href="{{ '/contact/' | relative_url }}">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="wrap content">
+      {{ content }}
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <p>{{ site.data.site.profile.name }} · {{ site.data.site.profile.institution }}</p>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,111 @@
+profile:
+  name: Jaxsen R. Day
+  title: Doctoral Student
+  institution: School of Information, The University of Texas at Austin
+  email: jaxsen@utexas.edu
+  location: Austin, Texas
+  photo: /assets/img/jaxsen-day-headshot.jpeg
+  cv_file: ""
+  biography: |
+    I am a doctoral student in Information Studies at the School of Information at The University of Texas at Austin.
+
+    My research centers on disability and accessibility, with a particular focus on information access in academic and technological contexts. I am especially interested in how disabled people encounter academic reading materials, library systems, visual information, and AI-enabled technologies.
+
+    My work draws on information studies, accessible user experience, and disability-informed perspectives on technology design and use. This site brings together my research, teaching, presentations, and other academic activity.
+
+links:
+  - label: Email
+    url: "mailto:jaxsen@utexas.edu"
+  - label: Google Scholar
+    url: "https://scholar.google.com/citations?user=qvMMp-IAAAAJ&hl=en"
+  - label: ORCID
+    url: "https://orcid.org/0009-0005-5376-9117"
+  - label: LinkedIn
+    url: "https://www.linkedin.com/in/jaxsenday"
+  - label: GitHub
+    url: "https://github.com/jaxsenday"
+
+research_interests:
+  - Accessibility
+  - Visual impairment
+  - Academic libraries
+  - Generative AI
+  - Information science
+
+papers:
+  - title: Voice interfaces for library accessibility: Challenges identified by academic librarians
+    authors: Day, J. R., Fleischmann, K. R., Rieh, S.-Y., and Choi, Y.
+    venue: ASIS&T Mid-Year Meeting
+    year: 2023
+    status: Presentation, 6 pages
+    url: ""
+    summary: Examines challenges that academic librarians identified when considering voice interfaces as tools for improving library accessibility.
+  - title: Serving the needs of students with disabilities: How academic librarians can collaborate with publishers and disability services offices
+    authors: Day, J. and Fleischmann, K. R.
+    venue: Proceedings of the 83rd Annual Meeting of the Association for Information Science and Technology
+    year: 2020
+    status: Poster, 6 pages
+    url: ""
+    summary: Discusses how academic librarians can work with publishers and disability services offices to improve access for students with disabilities.
+  - title: Good Systems: Ethical AI for CSCW
+    authors: Fleischmann, K. R., Greenberg, S. R., Gurari, D., Stangl, A., Verma, N., Day, J. R., Simons, R. N., and Yeh, T.
+    venue: 22nd ACM Conference on Computer-Supported Cooperative Work
+    year: 2019
+    status: Workshop, 7 pages
+    url: ""
+    summary: Contributes to a workshop framing ethical AI questions for CSCW through the Good Systems initiative.
+
+talks:
+  - title: Accessibility of Academic Reading Materials: Insights from Librarians, Students, and Disability Services
+    event: ALISE 2024
+    location: Virtual
+    date: October 2024
+    url: ""
+    notes: Presentation on accessibility barriers in academic reading workflows.
+  - title: Universal usability
+    event: Open Texas 2021
+    location: Virtual
+    date: March 2021
+    url: ""
+    notes: Co-presented with S. Burns.
+  - title: 3rd Annual Accessibility Hackathon
+    event: School of Information, UT Austin
+    location: Austin, Texas
+    date: November 2019
+    url: ""
+    notes: Presentation with S. Burns.
+
+activities:
+  - category: Service
+    items:
+      - Undergraduate Studies Committee, UT Austin iSchool (2020-2021)
+      - Guest Speaker, INF 385T: Accessible User Experience (April 29, 2021; February 16, 2023)
+      - Guest Speaker, INF 385C: HCI (April 13, 2023)
+  - category: Teaching
+    items:
+      - Teaching Assistant, Capstone Course (INF 388L), School of Information, UT Austin (2024-2025)
+      - Teaching Assistant, Ethics in AI, Computer and Data Science Online, UT Austin (2023-2024)
+      - Assistant Instructor, Ethical Foundations for Informatics, UT Austin iSchool (Spring 2022)
+      - Assistant Instructor, Introduction to Informatics, UT Austin iSchool (Fall 2021)
+      - Teaching Assistant, Introduction to Informatics, UT Austin iSchool (2020-2021)
+  - category: Awards
+    items:
+      - Scott and Vickie Reeve Endowed Fellowship, UT Austin iSchool (2020-2021)
+      - Provost's Fellowship Supplement, UT Austin iSchool (2019-2023)
+      - Mentoring Fellowship, UT Austin Graduate School (2019-2020)
+      - Outstanding Undergraduate Student in Computer Information Systems and Quantitative Analysis (2017)
+      - Texas Association for Education and Rehabilitation of the Blind and Visually Impaired Student Scholarship (2014)
+  - category: Research and Professional Experience
+    items:
+      - Graduate Research Assistant, Providing Equitable Access to Higher Education: The Role of Academic Libraries (Summer 2021)
+      - Graduate Research Assistant, Microsoft Ability Initiative, UT Austin (2019-2020)
+      - IMLS LADDER Fellow, Training Future Faculty in Library, AI, and Data-Driven Education and Research (2022-2023)
+      - Accessibility Technology and QA Consultant, Savvy Technology Solutions (2016-2019)
+      - Computer Technician, College of Education, Texas State University (2017-2019)
+
+contact:
+  office: ""
+  email: jaxsen@utexas.edu
+  office_hours: By appointment
+  note: |
+    The best way to reach me is by email. Please include a short subject line so I can route your message quickly.

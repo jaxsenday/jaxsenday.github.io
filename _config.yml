@@ -1,0 +1,11 @@
+title: Jaxsen R. Day
+email: ""
+description: Academic website for Jaxsen R. Day
+baseurl: ""
+url: "https://jaxsenday.github.io"
+markdown: kramdown
+permalink: pretty
+timezone: America/Chicago
+
+kramdown:
+  input: GFM

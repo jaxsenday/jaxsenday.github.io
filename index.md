@@ -38,7 +38,7 @@ layout: default
 <section class="section">
   <div class="section-head">
     <h2>Publications and Presentations</h2>
-    <a href="{{ '/papers/' | relative_url }}">View all</a>
+    <a href="{{ '/papers/' | relative_url }}">View all publications and presentations</a>
   </div>
   <ul class="card-list">
     {% for paper in site.data.site.papers limit:3 %}
@@ -59,7 +59,7 @@ layout: default
   <section class="panel">
     <div class="section-head">
       <h2>Recent Talks</h2>
-      <a href="{{ '/activities/' | relative_url }}">More activity</a>
+      <a href="{{ '/activities/' | relative_url }}">View all academic activities</a>
     </div>
     <ul class="stack-list">
       {% for talk in site.data.site.talks limit:4 %}
@@ -74,7 +74,7 @@ layout: default
   <section class="panel">
     <div class="section-head">
       <h2>Current Focus</h2>
-      <a href="{{ '/activities/' | relative_url }}">Academic activity</a>
+      <a href="{{ '/activities/' | relative_url }}">Review academic activities</a>
     </div>
     <p>My current work focuses on disability, accessibility, and information access across academic and technological settings.</p>
   </section>

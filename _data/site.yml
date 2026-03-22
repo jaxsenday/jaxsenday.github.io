@@ -33,14 +33,14 @@ research_interests:
   - Information science
 
 papers:
-  - title: Voice interfaces for library accessibility: Challenges identified by academic librarians
+  - title: "Voice interfaces for library accessibility: Challenges identified by academic librarians"
     authors: Day, J. R., Fleischmann, K. R., Rieh, S.-Y., and Choi, Y.
     venue: ASIS&T Mid-Year Meeting
     year: 2023
     status: Presentation, 6 pages
     url: ""
     summary: Examines challenges that academic librarians identified when considering voice interfaces as tools for improving library accessibility.
-  - title: Serving the needs of students with disabilities: How academic librarians can collaborate with publishers and disability services offices
+  - title: "Serving the needs of students with disabilities: How academic librarians can collaborate with publishers and disability services offices"
     authors: Day, J. and Fleischmann, K. R.
     venue: Proceedings of the 83rd Annual Meeting of the Association for Information Science and Technology
     year: 2020
@@ -56,7 +56,7 @@ papers:
     summary: Contributes to a workshop framing ethical AI questions for CSCW through the Good Systems initiative.
 
 talks:
-  - title: Accessibility of Academic Reading Materials: Insights from Librarians, Students, and Disability Services
+  - title: "Accessibility of Academic Reading Materials: Insights from Librarians, Students, and Disability Services"
     event: ALISE 2024
     location: Virtual
     date: October 2024

@@ -9,6 +9,11 @@ layout: default
     <p class="subtitle">{{ site.data.site.profile.institution }}</p>
     {{ site.data.site.profile.biography | markdownify }}
 
+    <div class="hero-actions" aria-label="Primary actions">
+      <a class="button-link button-link--solid" href="{{ '/papers/' | relative_url }}">View publications</a>
+      <a class="button-link" href="{{ '/contact/' | relative_url }}">Contact</a>
+    </div>
+
     <ul class="pill-list" aria-label="Research interests">
       {% for item in site.data.site.research_interests %}
         <li>{{ item }}</li>
@@ -22,6 +27,12 @@ layout: default
       <p class="meta">{{ site.data.site.profile.location }}</p>
     </section>
 
+    <section class="panel accent-panel">
+      <p class="eyebrow">Current agenda</p>
+      <p class="feature-text">Disability, accessibility, and information access across academic and technological systems.</p>
+      <p class="meta">Recent work examines academic reading materials, library workflows, visual information, and AI-enabled tools.</p>
+    </section>
+
     <section class="panel">
       <h2>Links</h2>
       <ul class="link-list">
@@ -33,6 +44,23 @@ layout: default
       </ul>
     </section>
   </aside>
+</section>
+
+<section class="section section-band">
+  <div class="metric-grid" aria-label="Site overview">
+    <article class="metric-card">
+      <p class="metric-value">{{ site.data.site.papers | size }}</p>
+      <p class="metric-label">Selected publications and presentations</p>
+    </article>
+    <article class="metric-card">
+      <p class="metric-value">{{ site.data.site.talks | size }}</p>
+      <p class="metric-label">Recent talks, interviews, and featured appearances</p>
+    </article>
+    <article class="metric-card">
+      <p class="metric-value">{{ site.data.site.activities | size }}</p>
+      <p class="metric-label">Major activity areas spanning teaching, service, and research</p>
+    </article>
+  </div>
 </section>
 
 <section class="section">
@@ -55,16 +83,36 @@ layout: default
   </ul>
 </section>
 
+<section class="section spotlight-grid">
+  <section class="panel spotlight-panel">
+    <p class="eyebrow">Research themes</p>
+    <h2>Designing access into the workflow, not adding it after the fact</h2>
+    <p>My work looks at how accessibility is shaped by infrastructure: document formats, library systems, classroom practices, interface design, and the adoption of AI tools in higher education.</p>
+    <p>The throughline is practical. I am interested in the points where disabled people lose time, context, or autonomy, and in the design choices that can restore them.</p>
+  </section>
+
+  <section class="panel quote-panel">
+    <p class="eyebrow">Approach</p>
+    <blockquote>
+      Accessibility becomes more durable when it is treated as part of everyday information systems rather than as a special-case exception.
+    </blockquote>
+  </section>
+</section>
+
 <section class="section grid two-up">
   <section class="panel">
     <div class="section-head">
-      <h2>Recent Talks</h2>
-      <a href="{{ '/activities/' | relative_url }}">View all academic activities</a>
+      <h2>Recent Talks and Features</h2>
+      <a href="{{ '/activities/' | relative_url }}">View all talks and features</a>
     </div>
     <ul class="stack-list">
       {% for talk in site.data.site.talks limit:4 %}
         <li>
-          <strong>{{ talk.title }}</strong><br>
+          {% if talk.url and talk.url != "" %}
+            <a href="{{ talk.url }}"><strong>{{ talk.title }}</strong></a><br>
+          {% else %}
+            <strong>{{ talk.title }}</strong><br>
+          {% endif %}
           {{ talk.event }} · {{ talk.date }}
         </li>
       {% endfor %}
@@ -73,9 +121,13 @@ layout: default
 
   <section class="panel">
     <div class="section-head">
-      <h2>Current Focus</h2>
-      <a href="{{ '/activities/' | relative_url }}">Review academic activities</a>
+      <h2>Academic Work</h2>
+      <a href="{{ '/cv/' | relative_url }}">Review CV and experience</a>
     </div>
-    <p>My current work focuses on disability, accessibility, and information access across academic and technological settings.</p>
+    <ul class="stack-list">
+      <li><strong>Research</strong><br>Accessibility, disability, visual information, and information access in academic contexts.</li>
+      <li><strong>Teaching</strong><br>Experience across informatics, ethics in AI, accessible user experience, and capstone instruction.</li>
+      <li><strong>Service</strong><br>Academic committees, invited guest speaking, and accessibility-centered collaboration.</li>
+    </ul>
   </section>
 </section>

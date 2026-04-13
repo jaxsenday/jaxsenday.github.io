@@ -63,6 +63,18 @@ papers:
     summary: Contributes to a workshop framing ethical AI questions for CSCW through the Good Systems initiative.
 
 talks:
+  - title: "ET Talk Podcast: Episode 6 - Digital Accessibility, Infrastructure Rather Than Request"
+    event: Enterprise Technology, The University of Texas at Austin
+    location: Online
+    date: April 2026
+    url: "https://tech.utexas.edu/news/et-talk-podcast-episode-6-digital-accessibility-infrastructure-rather-request"
+    notes: Podcast interview on digital accessibility as institutional infrastructure in higher education.
+  - title: "From broken PDFs to instant access: How ChatGPT rebuilds the research workflow at UT Austin"
+    event: OpenAI Academy
+    location: Online
+    date: April 2026
+    url: "https://academy.openai.com/public/blogs/from-broken-pdfs-to-instant-access-how-chatgpt-rebuilds-the-research-workflow-at-ut-austin-2026-04-01"
+    notes: Featured article on using ChatGPT to improve access to academic research materials for students with visual impairments.
   - title: "Accessibility of Academic Reading Materials: Insights from Librarians, Students, and Disability Services"
     event: ALISE 2024
     location: Virtual

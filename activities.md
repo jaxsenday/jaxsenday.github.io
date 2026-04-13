@@ -9,7 +9,7 @@ permalink: /activities/
 </div>
 
 <section class="section">
-  <h2>Talks and Presentations</h2>
+  <h2>Talks and Features</h2>
   <ul class="timeline">
     {% for talk in site.data.site.talks %}
       <li>
@@ -17,7 +17,7 @@ permalink: /activities/
         <p>{{ talk.event }} · {{ talk.location }} · {{ talk.date }}</p>
         {% if talk.notes %}<p>{{ talk.notes }}</p>{% endif %}
         {% if talk.url and talk.url != "" %}
-          <p><a href="{{ talk.url }}">Event link</a></p>
+          <p><a href="{{ talk.url }}">Link</a></p>
         {% endif %}
       </li>
     {% endfor %}

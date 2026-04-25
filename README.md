@@ -28,6 +28,18 @@ With the current repository name, the published site URL will be:
 3. Push to GitHub
 4. GitHub Pages republishes the site
 
+## Local preview
+
+This repo can be built locally with the GitHub Pages gem through Bundler. On this Mac, use Homebrew Ruby 3.3:
+
+```bash
+env BUNDLE_PATH=vendor/bundle /opt/homebrew/opt/ruby@3.3/bin/bundle install
+env BUNDLE_PATH=vendor/bundle /opt/homebrew/opt/ruby@3.3/bin/bundle exec jekyll build
+env BUNDLE_PATH=vendor/bundle /opt/homebrew/opt/ruby@3.3/bin/bundle exec jekyll serve
+```
+
+The generated `_site`, `.jekyll-cache`, and `vendor/bundle` folders are ignored by Git.
+
 ## Optional future cleanup
 
 If you later rename the repository to `jaxsenday.github.io`, it can become your main user site at:

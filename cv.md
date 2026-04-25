@@ -162,6 +162,9 @@ permalink: /cv/
   </div>
   <ul class="card-list">
     <li>
+      <p>Day, J. R. (2026). Responsible AI for Education: Student Panel. Panelist. <em>Responsible AI for Education 2026</em>, The University of Texas at Austin, Texas Union (Shirley Bird Perry Ballroom), Austin, TX. April 21, 2026.</p>
+    </li>
+    <li>
       <p>Day, J. R. (2026). Digital Accessibility: Infrastructure Rather Than Request. <em>ET Talk Podcast</em>, Episode 6. Hosted by Cole Camplese, Vice President of Technology and CIO, The University of Texas at Austin. February 10, 2026. <a href="https://www.youtube.com/watch?v=jIikJmAF1ts">View recording</a>.</p>
     </li>
     <li>

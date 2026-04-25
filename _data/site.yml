@@ -63,6 +63,12 @@ papers:
     summary: Contributes to a workshop framing ethical AI questions for CSCW through the Good Systems initiative.
 
 talks:
+  - title: "Responsible AI for Education: Student Panel"
+    event: Responsible AI for Education 2026
+    location: Texas Union (Shirley Bird Perry Ballroom), Austin, Texas
+    date: April 21, 2026
+    url: ""
+    notes: Panelist for a student panel on responsible AI in research and teaching at UT Austin.
   - title: "ET Talk Podcast: Episode 6 - Digital Accessibility, Infrastructure Rather Than Request"
     event: Enterprise Technology, The University of Texas at Austin
     location: Online

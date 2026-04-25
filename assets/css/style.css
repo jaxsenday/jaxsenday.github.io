@@ -305,7 +305,9 @@ h2 {
 .card-list li,
 .timeline li {
   flex-direction: column;
+  max-width: none;
   padding: 1.25rem;
+  width: 100%;
 }
 
 .section {

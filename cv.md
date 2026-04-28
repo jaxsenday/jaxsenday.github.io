@@ -201,7 +201,10 @@ permalink: /cv/
       <li>Research Associate, Digital Accessibility Center, The University of Texas at Austin, 2025-2026</li>
       <li>Undergraduate Studies Committee, iSchool, The University of Texas at Austin, 2020-2021</li>
       <li>Guest Speaker, INF 385T: Accessible User Experience, April 29, 2021</li>
+      <li>Guest Speaker, INF 385T: Accessible User Experience, November 10, 2022</li>
       <li>Guest Speaker, INF 385T: Accessible User Experience, February 16, 2023</li>
+      <li>Guest Speaker, INF 385T: Accessible User Experience, October 31, 2024</li>
+      <li>Guest Speaker, INF 385T: Accessible User Experience, October 23, 2025</li>
       <li>Guest Speaker, INF 385C: HCI, April 13, 2023</li>
       <li>Attended National Federation of the Blind Convention, 2018</li>
       <li>National Society of Collegiate Scholars, 2017</li>

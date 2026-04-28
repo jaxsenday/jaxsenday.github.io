@@ -41,7 +41,7 @@ permalink: /cv/
     <li>
       <h3>Ph.D., Information Studies</h3>
       <p class="meta">In progress &middot; iSchool, The University of Texas at Austin</p>
-      <p><strong>Doctoral Committee:</strong> Dr. Kenneth R. Fleischmann (Chair), Dr. James Howison, Dr. Danna Gurari, Dr. Soo Young Rieh</p>
+      <p><strong>Doctoral Committee:</strong> Dr. Kenneth R. Fleischmann (Chair), Dr. R. David Lankes, Dr. Danna Gurari, Dr. Soo Young Rieh, Dr. Abigale Stangl</p>
     </li>
     <li>
       <h3>M.Ed., Management of Technical Education</h3>

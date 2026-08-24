@@ -9,10 +9,10 @@ layout: default
     <p class="subtitle">{{ site.data.site.profile.institution }}</p>
     {{ site.data.site.profile.biography | markdownify }}
 
-    <div class="hero-actions" aria-label="Primary actions">
+    <nav class="hero-actions" aria-label="Primary actions">
       <a class="button-link button-link--solid" href="{{ '/papers/' | relative_url }}">View publications</a>
       <a class="button-link" href="{{ '/contact/' | relative_url }}">Contact</a>
-    </div>
+    </nav>
 
     <ul class="pill-list" aria-label="Research interests">
       {% for item in site.data.site.research_interests %}
@@ -47,7 +47,7 @@ layout: default
 </section>
 
 <section class="section section-band">
-  <div class="metric-grid" aria-label="Site overview">
+  <section class="metric-grid" aria-label="Site overview">
     <article class="metric-card">
       <p class="metric-value">{{ site.data.site.papers | size }}</p>
       <p class="metric-label">Selected publications and presentations</p>
@@ -60,7 +60,7 @@ layout: default
       <p class="metric-value">{{ site.data.site.activities | size }}</p>
       <p class="metric-label">Major activity areas spanning teaching, service, and research</p>
     </article>
-  </div>
+  </section>
 </section>
 
 <section class="section">
@@ -78,6 +78,24 @@ layout: default
         {% if paper.url and paper.url != "" %}
           <p><a href="{{ paper.url }}">Paper link</a></p>
         {% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+</section>
+
+<section class="section">
+  <div class="section-head">
+    <h2>White Papers</h2>
+    <a href="{{ '/white-papers/' | relative_url }}">View all white papers</a>
+  </div>
+  <ul class="card-list">
+    {% for paper in site.data.site.white_papers limit:2 %}
+      <li>
+        <h3>{{ paper.title }}</h3>
+        <p class="meta">{{ paper.authors }}</p>
+        <p>{{ paper.status }} · {{ paper.year }}{% if paper.updated %} · Updated {{ paper.updated }}{% endif %}</p>
+        <p>{{ paper.summary }}</p>
+        <p><a href="{{ paper.url | relative_url }}">Read the white paper in HTML</a></p>
       </li>
     {% endfor %}
   </ul>

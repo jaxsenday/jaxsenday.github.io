@@ -62,6 +62,15 @@ papers:
     url: ""
     summary: Contributes to a workshop framing ethical AI questions for CSCW through the Good Systems initiative.
 
+white_papers:
+  - title: "The AI Accessibility Harness Model: User Authority, AI Literacy, and Accessible Computing"
+    authors: Jaxsen R. Day
+    year: 2026
+    status: White paper
+    updated: August 18, 2026
+    url: "/white-papers/ai-accessibility-harness-model/"
+    summary: Explains the AI Accessibility Harness Model, an experience-grounded framework for directing AI-supported work across documents, applications, sources, and decisions while preserving user authority, validation, and control over consequential action.
+
 talks:
   - title: "Research Assistant Spotlight: Jaxsen R. Day"
     event: National Disability Center for Student Success

@@ -1,0 +1,220 @@
+---
+layout: default
+title: "The AI Accessibility Harness Model: User Authority, AI Literacy, and Accessible Computing"
+permalink: /white-papers/ai-accessibility-harness-model/
+description: "An experience-grounded framework for directing AI-supported work while preserving user authority, validation, accessibility, and control over consequential action."
+---
+
+<article class="paper" aria-labelledby="paper-title">
+  <header class="paper-header">
+    <p class="eyebrow">White paper</p>
+    <h1 id="paper-title">The AI Accessibility Harness Model: User Authority, AI Literacy, and Accessible Computing</h1>
+    <p class="paper-author">Jaxsen R. Day</p>
+    <p class="paper-meta">Last updated August 18, 2026</p>
+  </header>
+
+  <nav class="paper-toc" aria-labelledby="paper-toc-heading">
+    <h2 id="paper-toc-heading">Contents</h2>
+    <ul>
+      <li><a href="#orchestrate">Orchestrate</a>
+        <ul>
+          <li><a href="#stage-1-contained-workroom-and-orientation">Stage 1: Contained Workroom and Orientation</a></li>
+          <li><a href="#stage-2-negotiated-output-specification">Stage 2: Negotiated Output Specification</a></li>
+        </ul>
+      </li>
+      <li><a href="#delegate">Delegate</a>
+        <ul>
+          <li><a href="#contained-work-skills-and-constraints">Contained Work, Skills, and Constraints</a></li>
+          <li><a href="#work-hub-and-delegation-threads">Work Hub and Delegation Threads</a></li>
+          <li><a href="#conceptual-visual-the-user-at-the-project-hub">Conceptual Visual: The User at the Project Hub</a></li>
+        </ul>
+      </li>
+      <li><a href="#validate">Validate</a>
+        <ul>
+          <li><a href="#stage-3-returned-work-and-validation">Stage 3: Returned Work and Validation</a></li>
+          <li><a href="#evidence-recovery-and-handing-off-work">Evidence, Recovery, and Handing Off Work</a></li>
+        </ul>
+      </li>
+      <li><a href="#accelerate">Accelerate</a>
+      </li>
+      <li><a href="#accessibility-user-authority-and-safeguards">Accessibility, User Authority, and Safeguards</a>
+        <ul>
+          <li><a href="#no-silent-consequential-action">No Silent Consequential Action</a></li>
+        </ul>
+      </li>
+      <li><a href="#common-missteps">Common Missteps</a>
+      </li>
+      <li><a href="#practical-ai-literacy">Practical AI Literacy</a>
+      </li>
+      <li><a href="#examples-across-common-work">Examples Across Common Work</a>
+        <ul>
+          <li><a href="#library-source-retrieval">Library Source Retrieval</a></li>
+          <li><a href="#poorly-structured-pdfs-and-documents">Poorly Structured PDFs and Documents</a></li>
+          <li><a href="#research-retrieval-and-evidence-organization">Research Retrieval and Evidence Organization</a></li>
+          <li><a href="#files-folders-and-information-structures">Files, Folders, and Information Structures</a></li>
+          <li><a href="#cross-application-work">Cross-Application Work</a></li>
+          <li><a href="#high-friction-web-and-application-tasks">High-Friction Web and Application Tasks</a></li>
+          <li><a href="#general-knowledge-work-and-submission-packages">General Knowledge Work and Submission Packages</a></li>
+        </ul>
+      </li>
+      <li><a href="#discussion">Discussion</a>
+        <ul>
+          <li><a href="#the-model-in-relation-to-existing-literature">The Model in Relation to Existing Literature</a></li>
+          <li><a href="#levels-of-access-and-scope">Levels of Access and Scope</a></li>
+        </ul>
+      </li>
+      <li><a href="#conclusion">Conclusion</a>
+      </li>
+      <li><a href="#references">References</a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="paper-body">
+    <p>Artificial intelligence is increasingly present in ordinary research, writing, information management, and professional work. Yet practical understanding of how to use it effectively remains scattered. Guidance may focus on individual tools, isolated prompting techniques, technical capabilities, or general warnings, without offering a coherent account of how people can direct AI-supported work across the documents, applications, sources, and decisions that make up real projects.</p>
+    <p>This gap matters because effective AI use involves more than producing a response. It requires a user to define the purpose of the work, establish appropriate boundaries, provide relevant sources and context, review what the system returns, and retain authority over consequential decisions. These responsibilities can be especially important when a task involves accessibility barriers, complex information environments, or multiple applications.</p>
+    <p>I created the AI Accessibility Harness Model to organize these practical elements into a usable framework. Codex is the system through which I developed and describe the model, although its underlying approach can apply to other user-directed generative AI systems, such as Claude, where comparable capabilities and user control are available. The framework connects effective AI use to purpose, context, delegation, validation, accessibility, and user authority.</p>
+    <p>My decision to articulate this model grew from my experience as a visually impaired person navigating digital information landscapes. My ongoing use of assistive technology and Codex helped me refine this account through practice. In some contained tasks, Codex can function as an accessibility layer by helping me interpret and navigate an otherwise inaccessible or high-friction interface, digital artifact, or platform, while I retain the authority to direct the purpose of the work, define the task, and decide whether its outcomes are acceptable.</p>
+    <p>The capabilities described in this paper are conditional rather than automatic: users need to identify and use the relevant capabilities, provide appropriate context and access, set practical boundaries, and review what is returned. Available tools vary by system and account, and detailed setup guidance is outside this paper&#x27;s scope.</p>
+    <p>The framework describes a practical change in how a user can work with traditional computing, and its claims remain grounded in that experience.</p>
+    <p>Traditional computing, as the term is used here, is the familiar pattern in which a user operates each application directly. To produce a deliverable, the user moves through screens, keyboards, menus, fields, windows, and folder trees, using assistive technology as needed. Attention remains divided between the meaning of the task and the application actions required to retrieve sources, organize material, prepare documents, or complete forms.</p>
+    <p>Tokens are units of text that a model processes when it receives instructions or source material and when it produces a response (OpenAI, n.d.). Anthropic&#x27;s explanatory video likewise describes a model as generating one word at a time through prediction, while cautioning that this does not mean the model thinks one word at a time (Claude, 2026). In this model, token computing names the shift from operating every interface action directly to collaborating with Codex through that exchange. It is a conceptual term defined for this model, not a claim that the phrase is original or has an established technical definition.</p>
+    <p>Before Codex drafts, the user and Codex work through the project material and agree on the intended result. That exchange turns a broad task into a defined deliverable. The user can then pass the deliverable, or one contained part of it, to Codex with the sources, tools, limits, and expectations for review already in place. User attention shifts toward purpose, interpretation, validation, judgment, and authorship rather than continuous screen and keyboard operation.</p>
+    <p>An accessibility harness is the working relationship that connects the user&#x27;s purpose to the applications, documents, sources, and tools involved in the task. Within that harness, an access layer helps the user work through an inaccessible or high-friction interface, system, or workflow. Codex may inspect, translate, organize, navigate, or coordinate the work while the source remains unchanged. Remediation is the separate work of changing or rebuilding an approved document or deliverable to improve its accessibility. The harness may provide an access layer, support remediation, or do both when the task calls for both results.</p>
+    <p>The model follows a recurring cycle: Orchestrate, Delegate, Validate, and Accelerate. Orchestration establishes the project and intended result. Delegation assigns contained work. Validation repeatedly connects returned work and changes to their sources and requirements. Acceleration helps the user complete more work than traditional screen-and-keyboard computing may allow in the same period, and it helps move a validated deliverable into the next part of the work. The cycle can return to an earlier point whenever new material, uncertainty, or review changes the direction of the task.</p>
+    <h2 id="orchestrate">Orchestrate</h2>
+    <p>To orchestrate means to shape the task before and during the work. The user supplies the project context, explains the purpose, and asks Codex to identify gaps and raise clarifying questions before proceeding. By answering those questions, defining what belongs in scope, and identifying the decisions Codex must bring back for user review, the user continues to shape the work. Orchestration also includes revising the plan when a source is missing, a requirement is unclear, or returned work points in a different direction.</p>
+    <h3 id="stage-1-contained-workroom-and-orientation">Stage 1: Contained Workroom and Orientation</h3>
+    <p>A contained workroom, also called a data room in this model, is the set of files, sources, context, and project structure Codex may inspect for a multistep task. It can include candidate and authoritative documents, ordinary folder trees, source locations, connected services, approved internet sources, project history, permitted tools, and explicit exclusions. The user decides what enters the room and which locations, accounts, sources, and tools belong to the task. The workroom defines what Codex may inspect. Contained work separately defines what Codex may do with that material.</p>
+    <p>For instance, a local or cloud Drive folder can become part of this context. Codex can examine filenames, dates, contents, links, and relationships across the folder tree without requiring the user to open every item. It can identify candidate materials, likely version chains, duplicates, conflicts, missing files, and sources that appear out of date.</p>
+    <p>The orientation phase is the opening exchange in which Codex examines the workroom, finds and checks candidate material across approved local files, connected services, and web sources, identifies uncertainty, and asks clarifying questions. These checks may include matching a PDF to a citation, checking a file&#x27;s identity and date, locating a newer version, testing whether a document opens, or comparing a candidate source with an existing record. The user uses that evidence to decide which material is current, authoritative, relevant, stale, or outside the task.</p>
+    <p>Orientation also helps the user think through the intended result. A question about the audience may change the level of detail. A conflict between two templates may reveal a missing decision. A gap in the sources may lead the user to narrow a claim or approve a new search. Codex learns how the project fits together while its questions help the user define the work more precisely.</p>
+    <p>Stage 1 ends with a confirmed source set, clear exclusions, and a shared understanding of what remains uncertain. Grounding the task in this material reduces the amount Codex must infer without support.</p>
+    <h3 id="stage-2-negotiated-output-specification">Stage 2: Negotiated Output Specification</h3>
+    <p>An output specification is the agreed description of what the finished work should contain, how it should be organized, who will use it, what limits apply, and what will show that it is complete. It gives Codex concrete expectations without requiring the user to direct every lower-level step.</p>
+    <p>The user brings the requirements already known. Codex asks questions that identify decisions still needed. The discussion may settle the sections, length, format, voice, intended audience, destination, source rules, accessibility needs, claim limits, and evidence that should accompany the result. It may also identify questions that should remain visible for user judgment rather than being settled through inference.</p>
+    <p>For example, a literature review, might call for APA style, a defined number of sources using a specific publication type, named sections, a defined target audience, a citation audit against retained full text, and careful limits on claims. Codex may ask whether the review is narrative or systematic, whether unpublished material belongs, how recent the evidence must be, and how disagreements among studies should be represented. Drafting begins once these decisions provide a clear basis for the work.</p>
+    <p>Careful preparation can make the final drafting instruction short. Once Codex understands the confirmed sources, project context, purpose, audience, format, restrictions, and open questions, the user may only need to say, “Prepare the first section draft for my review and editing pass.” The instruction is brief because the workroom and output specification already carry the details of the task.</p>
+    <h2 id="delegate">Delegate</h2>
+    <p>To delegate means to hand off a contained portion of the task to Codex without giving up the decisions that define the work. The user does not have to hand off the entire final deliverable. One task might compare document versions, search approved databases, build a source set, prepare an outline, extract action items from meeting notes, or check citations against retained articles. Each task carries forward part of the purpose and context established through orchestration.</p>
+    <p>Delegation changes the user&#x27;s role from carrying every operational step to directing the process: curating materials, answering clarifying questions, reviewing intermediate work, correcting direction, and approving work that proceeds on the user&#x27;s behalf.</p>
+    <h3 id="contained-work-skills-and-constraints">Contained Work, Skills, and Constraints</h3>
+    <p>Delegation carries the limits of the contained workroom into each assigned task. The user explains the purpose and corrections in ordinary language. The workroom supplies the files, sources, and prior decisions. A skill is a reusable way of completing recurring work, such as citation auditing, document conversion, or structured source comparison. A constraint is a stated limit on what Codex may use, change, transfer, or decide. Tools let Codex inspect material or carry out approved actions. The quality of delegated work depends on how these parts fit the task and on the review that follows.</p>
+    <p>These limits let several tasks contribute to one project without turning a broad goal into open-ended authority.</p>
+    <h3 id="work-hub-and-delegation-threads">Work Hub and Delegation Threads</h3>
+    <p>A work hub is the central Codex thread where the user receives updates, sees the whole project, makes decisions, and keeps track of evidence and open questions. Each thread has a primary agent that holds the task context, coordinates the work, and returns the result to the user. When a task has distinct contained parts, that primary agent can coordinate multiple sub-agents. Each sub-agent takes on one bounded part of the work and returns its findings, uncertainty, and provisional work to the primary agent, which integrates the results for the user.</p>
+    <p>The hub lets the user divide a complex task while keeping shared sources, decisions, questions, and progress in one place. For example, a primary agent in one thread might coordinate one sub-agent to locate and check sources, another to prepare provisional work, and a third to audit citations or test that work against the user&#x27;s requirements. The primary agent carries relevant context and user decisions into each sub-agent&#x27;s bounded assignment, gathers the results, and presents an integrated update for user review.</p>
+    <h3 id="conceptual-visual-the-user-at-the-project-hub">Conceptual Visual: The User at the Project Hub</h3>
+    <p>The project hub can be pictured as a central desk: contained tasks move outward to delegation threads, while updates, questions, intermediate work, and requests for guidance return to the user.</p>
+    <div class="table-wrap">
+  <table>
+    <caption id="project-hub-table-caption">Two-way exchange at the project hub</caption>
+    <thead>
+        <tr><th scope="col"><strong>From the user at the central desk</strong></th><th scope="col"><strong>From delegation threads and agents</strong></th></tr>
+    </thead>
+    <tbody>
+        <tr><td>Decisions about what matters, what happens next, and the intended result</td><td>Progress updates and findings</td></tr>
+        <tr><td>Curated materials and boundaries</td><td>Clarifying questions and uncertainty</td></tr>
+        <tr><td>Guidance and corrections</td><td>Intermediate deliverables</td></tr>
+        <tr><td>Approval for work on the user&#x27;s behalf</td><td>Confirmation of approval or further guidance requested</td></tr>
+    </tbody>
+  </table>
+</div>
+    <p>This two-way exchange keeps the project connected to the user&#x27;s judgment and responsibility.</p>
+    <p>One experience-based example is using GPT Live voice mode as a spoken connection to the work hub. The user verbalizes a change to the sources of truth, intended output, or verification plan. The hub places the instruction in the project context, sends it to the relevant delegation thread, and returns the updated material for review. In this example, voice provides a direct way to guide work across several project tasks while the hub keeps everything within the users view and authority.</p>
+    <h2 id="validate">Validate</h2>
+    <p>To validate means to compare the work Codex returns and any resulting changes with the approved sources, output specification, and available evidence. Codex may return a draft, finding, source set, outline, accessible copy, proposed action, or another partial piece of the task. The user can inspect it, correct it, question the basis for it, or redirect what happens next.</p>
+    <p>Validation is ongoing rather than a single check at the end. It occurs whenever Codex returns work that may shape another task, decision, or deliverable. Each review asks whether Codex used the right material, stayed within the assignment, and provided enough evidence for the user to decide whether the work should move forward.</p>
+    <h3 id="stage-3-returned-work-and-validation">Stage 3: Returned Work and Validation</h3>
+    <p>A draft is one form of returned work. It is a provisional version prepared for inspection, revision, rejection, or approval. A draft may be a report, an accessible reading copy, an evidence table, a proposed folder plan, a form that has been filled but not submitted, or a package of proposed calendar and message changes. Calling it a draft keeps user review visible before the work is used or released.</p>
+    <p>The user can trace claims to sources, inspect how uncertainty was handled, compare the work with the requested format, and request revision or another check.</p>
+    <p>The result becomes final only when the user with the relevant authority accepts it and the agreed evidence supports completion.</p>
+    <h3 id="evidence-recovery-and-handing-off-work">Evidence, Recovery, and Handing Off Work</h3>
+    <p>Codex hands off the result with its evidence and unresolved questions so the user can decide what happens next.</p>
+    <p>Evidence of completion is the inspectable information that connects a completion claim to what actually happened. The right evidence depends on the task. It might be a saved article that matches the selected citation, a record showing which source supports each claim, a comparison between the original and remediated document, an updated calendar entry read back after a change, a sent-message record, or a confirmation number from an application.</p>
+    <p>Codex&#x27;s statement that a task is finished is an update, not the evidence itself. Completion rests on the returned result, the relevant source record, the checked change, and acceptance by the user with authority. When required evidence is missing, the user can mark the work as provisional or incomplete.</p>
+    <p>Validation can examine several parts of the work:</p>
+    <ul>
+      <li>Source validation checks that the right files, records, passages, and versions were used.</li>
+      <li>Action validation checks that Codex carried out the approved action and stayed within the approval scope.</li>
+      <li>Change validation checks the application, folder, document, or record after the action and looks for unexpected effects.</li>
+      <li>Result validation checks structure, formatting, citations, calculations, accessibility, and subject-matter accuracy.</li>
+      <li>Functional validation checks whether the user can use the result with the intended assistive technology and work setting.</li>
+      <li>User acceptance confirms that the result meets the purpose and that the user with authority is willing to use or release it.</li>
+    </ul>
+    <p>These forms of validation answer different questions. An automated structural check may identify document problems, while the user&#x27;s functional review may show that the reading experience remains confusing. The delegation thread that prepared the draft may catch obvious errors, while another contained thread may test unsupported assumptions against the sources and the user&#x27;s requirements. A saved application view may confirm a change, while the user still decides whether the change was appropriate.</p>
+    <p>Recovery means returning the work to a known, usable point after an interruption, error, or changed decision. Recovery may involve reporting what was attempted, checking whether a partial change occurred, restoring an earlier file version, revising the source set, or resuming from the last confirmed step. Codex then hands off a clear account of what it attempted, what changed, what it produced, what remains uncertain, and what the user can review, correct, approve, or do next.</p>
+    <h2 id="accelerate">Accelerate</h2>
+    <p>To accelerate has two meanings in this model. First, the harness can help a user complete more work in the same period than traditional screen-and-keyboard computing may allow. Codex carries suitable search, comparison, transformation, drafting, and coordination through token computing while the user retains direction and review. The saved effort may support another revision, a wider source comparison, or another contained check by Codex.</p>
+    <p>Second, a validated piece of work can support the next contained deliverable. A checked source set can support an outline. A reviewed outline can support a draft. An accepted draft can support a submission package or the next project. Once the user validates a piece, it can enter a new contained workroom or guide the next assignment without rebuilding the project from the beginning.</p>
+    <p>Acceleration depends on reliable context, constraints, and validation. When review reveals a problem, the user can return to the last confirmed point and revise or delegate again.</p>
+    <p>Following the cycle creates what this model treats as an environment antithetical to hallucination. It does not make error impossible, but context, evidence, and validation make unsupported claims, sources, details, or proposed actions easier to trace, question, correct, or reject.</p>
+    <h2 id="accessibility-user-authority-and-safeguards">Accessibility, User Authority, and Safeguards</h2>
+    <p>Accessibility within the harness means being able to perceive, operate, understand, monitor, interrupt, recover, and complete the work. These abilities apply to the full process, not only the final document:</p>
+    <ul>
+      <li>Perceive means receiving relevant sources, progress, questions, warnings, and results in a form the user can use.</li>
+      <li>Operate means giving direction, answering questions, making choices, and approving or rejecting work through the user&#x27;s preferred way of interacting.</li>
+      <li>Understand means knowing the goal, sources, work being attempted, important limits, and points of uncertainty.</li>
+      <li>Monitor means receiving useful updates about what has been completed, what remains, and where a decision is needed.</li>
+      <li>Interrupt means pausing the work before a consequential change or stopping a task whose direction is no longer right.</li>
+      <li>Recover means learning what changed, restoring an earlier version when possible, correcting the source set or instruction, and resuming from a known point.</li>
+      <li>Complete means receiving the intended result and enough evidence to judge that the task reached its agreed conclusion.</li>
+    </ul>
+    <p>User authority gives this relationship its direction. The user defines the outcome, decides how access should be supported, reviews and corrects the work, provides guidance, and decides whether to accept the result and any remaining risk. Codex carries contained work and returns questions, evidence, and deliverables for those user decisions.</p>
+    <p>Codex contributes search, inspection, comparison, transformation, drafting, organization, and checking within contained work. The user retains authorship, judgment, consent, accountability, and final review.</p>
+    <p>Permission remains specific to the action. Reading a document is different from editing it. Drafting a message is different from sending it. Entering values into a form is different from submitting it. Downloading a file is different from sharing it. Authority in one application does not silently carry into another.</p>
+    <p>Privacy follows the same principle. The user identifies what information belongs in the workroom, which applications and connected services may handle it, where outputs may be stored, and what may be retained. Sensitive content enters reusable examples, memories, or checking material only with specific authority. Credentials and multifactor authentication remain under the user&#x27;s control. When terms require consent, the user reviews and accepts them directly.</p>
+    <h3 id="no-silent-consequential-action">No Silent Consequential Action</h3>
+    <p>A consequential action is an action Codex takes on the user&#x27;s behalf that changes an external record, exposes information, spends money, or makes recovery difficult. Sending a message, submitting a form, uploading or publishing a document, making a purchase, disclosing private information, deleting a file, or replacing a working copy are familiar examples.</p>
+    <p>The principle of no silent consequential action means that Codex presents the action it proposes to take on the user&#x27;s behalf and its material consequence to the user with authority before acting. The review identifies the target, destination or recipient, content or entered values, and expected result. The user then approves that specific action. General permission to help with a project does not become approval to release, buy, delete, disclose, or submit.</p>
+    <p>After an approved action, Codex checks what happened and returns concrete evidence such as a confirmation page, reference number, sent message, saved file, or application view showing the change. Authoritative originals remain preserved. If a working copy may be replaced, the user sees the proposed replacement and recovery plan before approval. In the experience behind this model, options that were easier to review, interrupt, reverse, or recover from were usually preferable.</p>
+    <h2 id="common-missteps">Common Missteps</h2>
+    <p>Several common practices run against this model. A user may ask Codex for a final deliverable without first supplying the purpose, project context, sources, or a contained workroom. The workroom may include several versions without identifying which materials are current, authoritative, stale, or outside the task. A user may also treat the first draft as final or delegate work without reviewing the sources, stated basis, intermediate deliverables, and proposed next steps. These practices leave Codex with more room to guess and give the user less evidence for correction. The model instead treats orientation, source curation, clarification, and ongoing validation as part of the work itself.</p>
+    <h2 id="practical-ai-literacy">Practical AI Literacy</h2>
+    <p>Practical AI literacy means understanding enough about the working environment to direct Codex with purpose and review what it returns. A connector is an approved connection to an account or service. A plugin adds a packaged ability and may use particular tools or connections. The user needs to know where relevant files live, how a folder tree separates current material from stale or excluded versions, what each connector or plugin can access, and what Codex can and cannot see in the current task. This knowledge helps the user build a reliable workroom, set realistic boundaries, and recognize when more context or another approved tool is needed.</p>
+    <p>The model does not require every user to become a programmer; it requires enough understanding to direct work within the available environment.</p>
+    <h2 id="examples-across-common-work">Examples Across Common Work</h2>
+    <p>The examples below show how the cycle can appear in familiar work and how its form changes with the user, sources, setting, and consequences.</p>
+    <h3 id="library-source-retrieval">Library Source Retrieval</h3>
+    <p>A library search may begin with a citation, research question, library affiliation, databases, preferred file format, and destination folder. Codex can compare titles, authors, dates, journal details, and stable identifiers such as a digital object identifier (DOI). It can remove duplicates and distinguish an abstract, preprint, accepted manuscript, and publisher&#x27;s final version.</p>
+    <p>The requested result may include the verified citation, direct source link, best authorized access option, accessible explanation of access conditions, and saved file if download is approved. Authentication, downloads, interlibrary-loan requests, and ambiguous access choices remain under the user&#x27;s decision. A saved file that matches the selected citation provides evidence of successful retrieval for that task.</p>
+    <h3 id="poorly-structured-pdfs-and-documents">Poorly Structured PDFs and Documents</h3>
+    <p>A poorly structured document requires the source copy, the user&#x27;s question, the relevant pages, intended use, and preferred way of reviewing the result. Codex can inspect text, page images, layout, headings, tables, lists, and meaningful visuals. A draft may take the form of a navigable reading copy, structured extraction, action list, reformatted copy, or description of important visual information.</p>
+    <p>The source remains available for comparison. Codex marks uncertain reading order, unclear characters, incomplete tables, and ambiguous visuals. The user reviews representative and high-risk content in the intended format and assistive-technology setting. Replacing a working copy, uploading or publishing a derivative, and remediating the authoritative document remain separate decisions.</p>
+    <h3 id="research-retrieval-and-evidence-organization">Research Retrieval and Evidence Organization</h3>
+    <p>A research search may begin with the question, date limits, inclusion rules, rules about which sources carry more weight, search systems, existing references, and intended use. Codex can record search queries, resolve citations, compare identifiers, remove duplicates, identify promising full text, and organize an accessible source record that links each source to the claims it may support.</p>
+    <p>The requested evidence can distinguish background material from sources used for claims that could shape an important decision. Database descriptions and search snippets help discover sources, while substantive claims are checked against full text. Expansion of the source collection, additional downloads, sensitive storage, tagging, and changes to retained records remain explicit user decisions.</p>
+    <h3 id="files-folders-and-information-structures">Files, Folders, and Information Structures</h3>
+    <p>For file-and-folder work, an ordinary project tree becomes easier to examine. Codex can inventory files, compare names and contents, locate duplicates, identify likely version chains, show which files depend on others, and propose a clearer organization. The user identifies the authoritative materials, current project stage, retention needs, and folders outside the task.</p>
+    <p>The draft may be a proposed folder tree, version table, duplicate list, or plan for moves and names. Proposed changes remain drafts until user review. Approved changes are followed by a report of the resulting structure, with backups, version history, or a map from old locations to new ones supporting recovery.</p>
+    <h3 id="cross-application-work">Cross-Application Work</h3>
+    <p>A cross-application task may bring together meeting recordings or transcripts, project notes, a calendar, task tracker, shared files, roles, deadlines, and disclosure limits. Codex can compare the sources and resolve differences, identify decisions and action items, and prepare one accessible review package with source links, timestamps, owners, dates, uncertainty, and proposed changes.</p>
+    <p>Read and write permissions remain separate across applications. Authority to read a transcript does not include authority to write to a calendar, and authority to draft a task does not include authority to send it. Approved changes are followed by information read back from each application and by the relevant saved records.</p>
+    <h3 id="high-friction-web-and-application-tasks">High-Friction Web and Application Tasks</h3>
+    <p>For a high-friction web or application task, the user identifies the account, destination, confirmed information, intended consequence, and preferred review format. Codex can navigate the approved process, explain visual or spatial information, fill a draft form, show validation errors, and provide an ordered summary before action.</p>
+    <p>The user controls credentials, authentication, and consent. Codex works within security checks, licensing, terms, and organizational rules. If an approved access option cannot support the task, Codex returns the barrier to the user for an authorized alternative. Costs, disclosures, permission requests, unclear wording, or application changes return the task for clarification. Submissions, purchases, sends, and deletions remain contingent on the user&#x27;s exact approval of the entered values, destination, and expected consequence.</p>
+    <h3 id="general-knowledge-work-and-submission-packages">General Knowledge Work and Submission Packages</h3>
+    <p>For a broader knowledge project, the approved context may include notes, articles, recordings, earlier drafts, a required template, source files, and instructions about audience, purpose, voice, deadline, and review method. Codex can organize the material, draft sections, build tables, prepare descriptions, format citations, populate draft fields, and assemble a completion checklist.</p>
+    <p>The requested package may include a record showing which source supports each claim, open questions, format checks, field checks, and an accessible review copy. Upload and submission remain separately authorized. The exact file, destination, key fields, and expected consequence return to the user for review before release.</p>
+    <h2 id="discussion">Discussion</h2>
+    <h3 id="the-model-in-relation-to-existing-literature">The Model in Relation to Existing Literature</h3>
+    <p>Annapureddy et al. (2025) propose a 12-competency model for generative-AI literacy. The proposed competencies include, but are not limited to, understanding what generative AI can and cannot do, prompt engineering and other technical skills, assessing outputs, and contextual, ethical, and legal considerations. Vaccaro et al. (2024) reviewed 106 experiments comparing people working alone, AI working alone, and people working with AI. Most of the reviewed experiments involved either decision tasks, such as classification or assessment, or creation tasks, such as writing or summarizing. Only three experiments assigned separate parts of a task to people and AI. Those three results were mixed, and their combined estimate was not statistically conclusive. Vaccaro et al. also report that substantial variation across the reviewed experiments remained unexplained and call for further research on effective processes for integrating people and AI. Vaccaro et al. do not describe a consistent practice of user validation before AI output is used; validation is a feature of this model, not a process their review tested.</p>
+    <p>These articles are included to show adjacent questions that peer-reviewed research has examined: what knowledge and practices generative-AI literacy may include and how task conditions relate to measured human-AI performance. They do not propose, test, or validate the Accessibility Harness Model. This paper presents a separate, experience-grounded conceptual account of user-directed AI-supported work.</p>
+    <h3 id="levels-of-access-and-scope">Levels of Access and Scope</h3>
+    <p>The model distinguishes four levels of access. Access-layer mediation means completing the current task through a barrier while leaving the source unchanged. An accessible working copy is a usable version created for the current purpose. Source remediation means repairing the authoritative document or an approved replacement. Direct accessibility means that users can use the source application, document, or service through its own interface and with relevant assistive technology. Each level answers a different question and calls for its own evidence.</p>
+    <p>Evidence from a completed mediated task applies to the named task, sources, user, tools, and setting. Direct accessibility of the source application or service requires separate evidence. This distinction allows the harness to support meaningful work without changing responsibility for the direct accessibility of underlying sources and systems.</p>
+    <p>This framework names a pattern observed through sustained lived use. Its experiential claims remain situated in that context, while the cited literature supports the specific findings attributed to it. This model is an experience-grounded conceptual account, not the product of a formal empirical study or formal qualitative analytic process. Different users may prefer direct application use, conventional assistive technology, an accommodation, document remediation, Codex mediation, or a combination. The model provides one account of Codex as an access practice, not a universal measure of what will work in every setting.</p>
+    <h2 id="conclusion">Conclusion</h2>
+    <p>When the cycle works, the user can move a meaningful task across applications and sources without manually carrying every operational step. The work remains grounded in a contained workroom, clear output requirements, inspectable drafts, and user decisions.</p>
+    <p>The model&#x27;s distinctive claim is that an accessibility layer can support contained work without transferring the user&#x27;s authorship, judgment, consent, accountability, or final review.</p>
+    <h2 id="references">References</h2>
+    <ul class="reference-list">
+      <li>Annapureddy, R., Fornaroli, A., &amp; Gatica-Perez, D. (2025). Generative AI literacy: Twelve defining competencies. <em>Digital Government: Research and Practice, 6</em>(1), Article 13. <a href="https://doi.org/10.1145/3685680">https://doi.org/10.1145/3685680</a></li>
+      <li>Claude. (2026, August 5). What happens when you talk to AI? [Video]. YouTube. <a href="https://www.youtube.com/watch?v=j1Vk6Y-23CY">https://www.youtube.com/watch?v=j1Vk6Y-23CY</a></li>
+      <li>OpenAI. (n.d.). <em>Tokenizer</em>. <a href="https://platform.openai.com/tokenizer/">https://platform.openai.com/tokenizer/</a></li>
+      <li>Vaccaro, M., Almaatouq, A., &amp; Malone, T. (2024). When combinations of humans and AI are useful: A systematic review and meta-analysis. <em>Nature Human Behaviour, 8</em>(12), 2293–2303. <a href="https://doi.org/10.1038/s41562-024-02024-1">https://doi.org/10.1038/s41562-024-02024-1</a></li>
+    </ul>
+  </div>
+
+  <p class="paper-back-link"><a href="{{ '/white-papers/' | relative_url }}">Back to White Papers</a></p>
+</article>
